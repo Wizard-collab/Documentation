@@ -32,6 +32,8 @@ Current version is |release|
    :maxdepth: 3
    :caption: Python API
 
+   API_Introduction
+
 Indices and tables
 ==================
 
