@@ -3501,17 +3501,17 @@ button[disabled] {
 }
 
 .btn-neutral {
-  background-color: #f3f6f6!important;
-  color: #404040!important;
+  background-color: #5e606e!important;
+  color: #ffffff!important;
 }
 
 .btn-neutral:hover {
-  background-color: #e5ebeb!important;
-  color: #404040;
+  background-color: #8e91a1!important;
+  color: #ffffff;
 }
 
 .btn-neutral:visited {
-  color: #404040!important;
+  color: #ffffff!important;
 }
 
 .btn-success {
@@ -4503,8 +4503,8 @@ hr {
 .rst-content code,.rst-content tt,code {
   white-space: nowrap;
   max-width: 100%;
-  background: #fff;
-  border: 1px solid #e1e4e5;
+  background: #535566;
+  border: 1px solid #1e2029;
   font-size: 75%;
   padding: 0 5px;
   font-family: SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,Courier,monospace;
@@ -5415,6 +5415,7 @@ footer p {
   padding: 0;
   border: none;
   margin: 0;
+  border: 1px solid #535566;
 }
 
 .rst-content div[class^=highlight] td.code {
@@ -5436,7 +5437,7 @@ footer p {
   padding: 12px;
   display: block;
   overflow: auto;
-  background-color:#535566;
+  background-color:#212128;
 }
 
 .rst-content div[class^=highlight] pre .hll {
@@ -5750,7 +5751,7 @@ html.writer-html5 .rst-content table.docutils td>p,html.writer-html5 .rst-conten
 }
 
 .rst-content code,.rst-content tt {
-  color: #000;
+  color: #ffffff;
   font-family: SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,Courier,monospace;
   padding: 2px 5px;
 }
@@ -5761,7 +5762,7 @@ html.writer-html5 .rst-content table.docutils td>p,html.writer-html5 .rst-conten
 }
 
 .rst-content code.literal,.rst-content tt.literal {
-  color: #e74c3c;
+  color: #ffffff;
 }
 
 .rst-content code.xref,.rst-content tt.xref,a .rst-content code,a .rst-content tt {
@@ -5804,8 +5805,8 @@ html.writer-html4 .rst-content dl:not(.docutils)>dt,html.writer-html5 .rst-conte
   margin: 6px 0;
   font-size: 90%;
   line-height: normal;
-  background: #e7f2fa;
-  color: #535566;
+  background: #535566;
+  color: #ffffff;
   border-top: 3px solid #6ab0de;
   padding: 6px;
   position: relative;

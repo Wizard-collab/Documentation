@@ -2,14 +2,14 @@
 Quickstart
 ^^^^^^^^^^
 
-
+========
 Download 
 ========
 
 You can download Wizard from the
 `official website <https://wizard-pipeline-manager.webflow.io>`_
 
-
+============
 Installation
 ============
 
@@ -43,7 +43,7 @@ You're done, enjoy !
   :width: 400
   :alt: Alternative text
 
-
+==============
 Uninstallation
 ==============
 
@@ -59,17 +59,20 @@ It launch a quick uninstaller, you can choose to repair the current version of w
   :width: 400
   :alt: Alternative text
 
-
+=============
 Create a site
 =============
 
 First of all, wizard will ask you to create a "site". It is a folder where wizard will store projects and users informations. If you plan to work in team, you have to set the site in a shared drive, else, the path doesn't matter. We recommend to never touch manually this folder.
 
 .. image:: _images/Create_site_1.jpg
-  :width: 800
+  :width: 500
   :alt: Alternative text
 
+.. danger:: Modifying files in this directory without a full knowledge can corrupt all the projects stored in wizard. It is strongly recommended to never touch 
+  files in this directory !
 
+=============
 Create a user
 =============
 
@@ -85,6 +88,8 @@ If you are TD you can first use the "admin" profile, the password is "administra
   :width: 300
   :alt: Alternative text
 
+.. note:: We recommand to change the admin password after the first connection to limit access to this user profile
+
 If you create a user, you will need to fill theses informations :
 
 .. image:: _images/Create_user_3.jpg
@@ -94,7 +99,7 @@ If you create a user, you will need to fill theses informations :
 Then you will need to confirm your email, you will receive a code on your email, enter it in the next field :
 
 .. image:: _images/Create_user_4.jpg
-  :width: 300
+  :width: 200
   :alt: Alternative text
 
 Congrats, you have created a user !
