@@ -5407,7 +5407,6 @@ footer p {
 }
 
 .rst-content div[class^=highlight],.rst-content pre.literal-block {
-  border: 1px solid #e1e4e5;
   overflow-x: auto;
   margin: 1px 0 24px;
 }
@@ -5437,6 +5436,7 @@ footer p {
   padding: 12px;
   display: block;
   overflow: auto;
+  background-color:#535566;
 }
 
 .rst-content div[class^=highlight] pre .hll {
@@ -5600,7 +5600,7 @@ html.writer-html5 .rst-content .section ol p,html.writer-html5 .rst-content .sec
 }
 
 .rst-content .highlighted {
-  background: #f1c40f;
+  background: #1e2029;
   box-shadow: 0 0 0 2px #f1c40f;
   display: inline;
   font-weight: 700;

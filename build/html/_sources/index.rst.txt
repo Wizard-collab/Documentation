@@ -16,23 +16,24 @@ Python based CG pipeline tools for professionals and students
 Current version is |release|
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
    :caption: First steps
 
    Quickstart
    Overview
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
    :caption: Documentation
 
    User_guide
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
    :caption: Python API
 
    API_Introduction
+   PyWizard
 
 Indices and tables
 ==================

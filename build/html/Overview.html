@@ -103,12 +103,11 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#scene">Scene</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pin-asset">Pin Asset</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#node-graph">Node Graph</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#list-jobs">List Jobs</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#exports">Exports</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#work-versions">Work versions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#playblast">Playblast</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#history">History</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#tickets">Tickets</a></li>
 </ul>
 </li>
@@ -128,9 +127,11 @@
 <li class="toctree-l2"><a class="reference internal" href="#extras">Extras</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#notification-wall">Notification Wall</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#chat">Chat</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#python-console-log">Python Console &amp; Log</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#log-python-console">Log &amp; Python Console</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Settings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#locked-asset">Locked Asset</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#running-asset">Running Asset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#server">Server</a></li>
 </ul>
 </li>
 </ul>
@@ -143,6 +144,7 @@
 <p class="caption"><span class="caption-text">Python API</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="API_Introduction.html">Itroduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PyWizard.html">PyWizard</a></li>
 </ul>
 
             
@@ -244,6 +246,10 @@ Access the Wizard - Pipeline Manager project hosted by Github</p>
 <p>Subprocess manager : The Subprocess Manager is a tool that isolates and relocates some wizard tasks. It allows you to keep using Wizard while it performs long and incompressible operations like publish and map conversation, playblast or animation export.</p>
 <p>PyWizard : Access subprocess application programming interface.</p>
 <a class="reference internal image-reference" href="_images/overview_menu_5.png"><img alt="Alternative text" src="_images/overview_menu_5.png" style="width: 300px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To use Pywizard, refer to the API documentation.</p>
+</div>
 </div>
 <div class="section" id="help">
 <h3>Help<a class="headerlink" href="#help" title="Permalink to this headline">¶</a></h3>
@@ -280,97 +286,113 @@ Each Asset contains a specific list of stages. They represent the fabrication pr
 </div>
 <div class="section" id="scene">
 <h2>Scene<a class="headerlink" href="#scene" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pin-asset">
+<h3>Pin Asset<a class="headerlink" href="#pin-asset" title="Permalink to this headline">¶</a></h3>
+<p>Use the pin icon to lock temporari ly your scene. It allows you to drag and drop multiple published asset from the outliner to reference them in the scene. The scene will be highlighted in blue when pinned.</p>
+<a class="reference internal image-reference" href="_images/overview_pin.png"><img alt="Alternative text" src="_images/overview_pin.png" style="width: 800px;" /></a>
+</div>
 <div class="section" id="node-graph">
 <h3>Node Graph<a class="headerlink" href="#node-graph" title="Permalink to this headline">¶</a></h3>
-<p>The Node Graph is a nodal representation of the content of your work scene. Your work file is represented by a node relative to the stage to which it corresponds. This is the central node of the Graph Node, separated from the other nodes. If your file is a modeling file, it will be represented by a modeling node, etc…
+<p>The Node Graph is a nodal representation of the content of your work scene. Your work file is represented by a node relative to the stage to which it corresponds. This is the main node of the Graph Node, separated from the other nodes. If your file is a modeling file, it will be represented by a modeling node, etc…
 The other nodes represents the references in your scene.</p>
-<p>– image– (Node Graph contenant 3 REFS - Node Graph HL, main Node HL et commentée “Main Node”, Refs HL commentées “Références”)</p>
-</div>
-<div class="section" id="list-jobs">
-<h3>List Jobs<a class="headerlink" href="#list-jobs" title="Permalink to this headline">¶</a></h3>
-<p>The job list tab is a list presentation of the content of the Node Graph.</p>
-<p>– image– (List Job - List Job HL)</p>
+<a class="reference internal image-reference" href="_images/overview_tab_1.png"><img alt="Alternative text" src="_images/overview_tab_1.png" style="width: 800px;" /></a>
 </div>
 <div class="section" id="exports">
 <h3>Exports<a class="headerlink" href="#exports" title="Permalink to this headline">¶</a></h3>
 <p>The “Exports” tab lists all the export history of your scene. You can open or comment any export using the icons on the right side.</p>
-<p>– image– (Export - Export Onglet HL et les icones explorer/comment sous lignées)</p>
+<a class="reference internal image-reference" href="_images/overview_tab_2.png"><img alt="Alternative text" src="_images/overview_tab_2.png" style="width: 800px;" /></a>
 </div>
 <div class="section" id="work-versions">
 <h3>Work versions<a class="headerlink" href="#work-versions" title="Permalink to this headline">¶</a></h3>
-<p>The “Work Version” tab lists all the versions history of your scene. You can open, comment or delete any version using the icons on the right side.</p>
-<p>– image– (Work versions - Work versions HL + les icones explorer, delete et comment sous lignées)</p>
+<p>The “Work Version” tab shows the Version Manager. It lists all the versions history of your scene. It shows the last 3 work versions ( you can display more or less by clicking on the +3/-3 icons), the user who created it and the comment. You can delete, comment or open any version using the icons on the right side.</p>
+<a class="reference internal image-reference" href="_images/overview_tab_3.png"><img alt="Alternative text" src="_images/overview_tab_3.png" style="width: 800px;" /></a>
 </div>
 <div class="section" id="playblast">
 <h3>Playblast<a class="headerlink" href="#playblast" title="Permalink to this headline">¶</a></h3>
-<p>The “Playblast” tab lists all playblast history. You can open, launch or delete any Playblast file using the icons on the right side. At any time, you can ask Wizard for a playblast of the scene using the “Playblast” button at the bottom right.</p>
-<p>– image– (Playblast - Playblast HL + les icones explorer, delete et launch sous lignées + bouton Playblast HL )</p>
-</div>
-<div class="section" id="history">
-<h3>History<a class="headerlink" href="#history" title="Permalink to this headline">¶</a></h3>
-<p>The “History” tab displays the history of the asset from its creation to its last modification.</p>
-<p>– image– (History - History HL)</p>
+<p>The “Playblast” tab lists all playblast history. It shows the last 3 versions of playblast ( you can display more or less by clicking on the +3/-3 icons), the user who created it and the comment. You can delete, comment or open any version using the icons on the right side.</p>
+<a class="reference internal image-reference" href="_images/overview_tab_4.png"><img alt="Alternative text" src="_images/overview_tab_4.png" style="width: 800px;" /></a>
 </div>
 <div class="section" id="tickets">
 <h3>Tickets<a class="headerlink" href="#tickets" title="Permalink to this headline">¶</a></h3>
-<p>The “Ticket” tab allows you to open a ticket on an asset. A ticket is a note that reveals a problem and justifies a retake. Choose the user concerned and create the ticket. Once opened on the asset, the concerned user will receive a notification: the ticket will remain open until a user close it.</p>
-<p>– image– (Tickets - Tickets HL)</p>
+<p>The “Ticket” tab allows you to open a ticket on an asset. A ticket is a note that reveals a problem and justifies a retake. Click on the “Open new ticket” button to create a new ticket. Choose the user concerned, or all the user connected to the project and create the ticket. Once opened on the asset, the concerned user(s) will receive a notification: the ticket will remain open until a user close it.</p>
+<a class="reference internal image-reference" href="_images/overview_tab_5.png"><img alt="Alternative text" src="_images/overview_tab_5.png" style="width: 800px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can filter the display of ticket the two button on the upper right corner of the ticket tab. It will show you only your ticket(s) or the opened ticket(s).</p>
+</div>
 </div>
 </div>
 <div class="section" id="launcher">
 <h2>Launcher<a class="headerlink" href="#launcher" title="Permalink to this headline">¶</a></h2>
 <p>The Launcher is the area where you select the variant and version of an asset and then the software you are working with. This is also where you access the comments and screenshot of your scenes.</p>
+<a class="reference internal image-reference" href="_images/overview_launcher_0.png"><img alt="Alternative text" src="_images/overview_launcher_0.png" style="width: 800px;" /></a>
 <div class="section" id="variants">
 <h3>Variants<a class="headerlink" href="#variants" title="Permalink to this headline">¶</a></h3>
 <p>By default, each asset is created on a variant called “main”. This is the asset in its main variant. Variants are each of the differences represented by a replica or a copy of the main asset in its main variant.
 The variants of an asset simplify the integration of these differences in the pipeline of the concerned asset. You can create as many variants as the asset requires for your project.
 For example, variants are used in case of clothing changes for a character. This example therefore implies a variant of the asset in the modeling, texturing, rig and shading stages to integrate these differences into your project. Another variant example: If the texturing of your asset changes, a variant in the texturing stage is necessary.</p>
-<p>– image– (Launcher, Section variante déroulé avec plusieur variantes ( claire dans le meilleur des cas)</p>
+<a class="reference internal image-reference" href="_images/overview_launcher_1.png"><img alt="Alternative text" src="_images/overview_launcher_1.png" style="width: 800px;" /></a>
 </div>
 <div class="section" id="softwares">
 <h3>Softwares<a class="headerlink" href="#softwares" title="Permalink to this headline">¶</a></h3>
 <p>The “softwares” part of the launcher allows you to choose the software you want to use to work on the selected asset’s stage.</p>
-<p>– image– (Softwares List Launcher déroulé HL)</p>
+<a class="reference internal image-reference" href="_images/overview_launcher_2.png"><img alt="Alternative text" src="_images/overview_launcher_2.png" style="width: 800px;" /></a>
 </div>
 <div class="section" id="version">
 <h3>Version<a class="headerlink" href="#version" title="Permalink to this headline">¶</a></h3>
 <p>The version of the asset (not to be confused with the variant of an asset) is the backup history of your asset. By default, an asset is created in version 0000, each backup increments this numbers as follows: 0001, 0002, 0003 etc…
 A list containing these versions is available in selection in this part of the launcher and allows you to open any working version of your asset.</p>
-<p>– image– (Menu Version déroulé - HL)</p>
+<a class="reference internal image-reference" href="_images/overview_launcher_3.png"><img alt="Alternative text" src="_images/overview_launcher_3.png" style="width: 800px;" /></a>
 </div>
 <div class="section" id="comment">
 <h3>Comment<a class="headerlink" href="#comment" title="Permalink to this headline">¶</a></h3>
 <p>The comment section of the Launcher allows you to comment each working version. Version comments are very useful for the fabrication history of an asset. They are even more useful during a version back-up to know on which version you want to perform this back-up. Use the comments to document the history of your asset. Write in the text field and click the comment icon to post your comment.</p>
-<p>– image– (Comment section avec commentaire inscrit dedans )</p>
+<a class="reference internal image-reference" href="_images/overview_launcher_4.png"><img alt="Alternative text" src="_images/overview_launcher_4.png" style="width: 800px;" /></a>
 </div>
 <div class="section" id="screenshot">
 <h3>Screenshot<a class="headerlink" href="#screenshot" title="Permalink to this headline">¶</a></h3>
 <p>The screenshot of your work scene is done when you save your asset in the software. It allows to display an image of the scene and helps visualise your asset without opening it.</p>
-<p>– image– (Screenshot scene )</p>
+<a class="reference internal image-reference" href="_images/overview_launcher_5.png"><img alt="Alternative text" src="_images/overview_launcher_5.png" style="width: 800px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Click on the screenshot to display it full size.</p>
+</div>
+<a class="reference internal image-reference" href="_images/overview_launcher_6.png"><img alt="Alternative text" src="_images/overview_launcher_6.png" style="width: 800px;" /></a>
 </div>
 <div class="section" id="locker">
 <h3>Locker<a class="headerlink" href="#locker" title="Permalink to this headline">¶</a></h3>
-<p>The locker is a function that locks an asset automatically when it is opened from Wizard. This function aims to secure the working scene so that each file is edited by one user at a time. Once your work is complete, the asset remains locked and therefore unavailable to the rest of your team. Remember to unlock it by clicking on the locker icon. If you are looking to unlock a working scene locked by an absent user that can’t do it itself, you can right click on the locker icon and select “send unlock request”. This function sends a code per email to the user who locked the scene. Get the code from this user and write it in the text box provided for this purpose so that wizard unlocks the scene. This process ensures that the user who owns the lock allows you access to the file.</p>
-<p>– image– (Lock)</p>
+<p>The locker is a function that locks an asset automatically when it is opened from Wizard. This function aims to secure the working scene so that each file is edited by one user at a time.</p>
+<a class="reference internal image-reference" href="_images/overview_launcher_8.png"><img alt="Alternative text" src="_images/overview_launcher_8.png" style="width: 800px;" /></a>
+<p>Once your work is complete, the asset remains locked and therefore unavailable to the rest of your team. Remember to unlock it by clicking on the locker icon.</p>
+<a class="reference internal image-reference" href="_images/overview_launcher_7.png"><img alt="Alternative text" src="_images/overview_launcher_7.png" style="width: 800px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are looking to unlock a working scene locked by an absent user that can’t do it itself, you can right click on the locker icon and select “send unlock request”. This function sends a code per email to the user who locked the scene. Get the code from this user and write it in the text box provided for this purpose so that wizard unlocks the scene. This process ensures that the user who owns the lock allows you access to the file.</p>
+</div>
+<a class="reference internal image-reference" href="_images/overview_launcher_10.png"><img alt="Alternative text" src="_images/overview_launcher_10.png" style="width: 800px;" /></a>
 </div>
 <div class="section" id="id1">
 <h3>Launcher<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>The Launcher allows you to open your work scenes, it’s the only way to open your software and recover the Wizard tools that will allow it to integrate your work into the pipeline. The launcher opens the variant and its selected version, with the selected software.</p>
-<p>– image– (Launcher)</p>
+<a class="reference internal image-reference" href="_images/overview_launcher_11.png"><img alt="Alternative text" src="_images/overview_launcher_11.png" style="width: 800px;" /></a>
 </div>
 </div>
 <div class="section" id="user-infos">
 <h2>User infos<a class="headerlink" href="#user-infos" title="Permalink to this headline">¶</a></h2>
 <p>It’s here in the UI that you will find information about your user. Your photo, your level, your Xps.
 Xps is earned by the work done from Wizard. Levels are earned from Xps.
-This is also where the administrator status is mentioned, if you declared yourself as administrator when you created your user.
+This is also where the administrator/staff status is mentioned, if you declared yourself as administrator when you created your user.
 You can also consult the tickets that are sent to you and the notifications you are sending.</p>
-<p>–image– (User Infos)</p>
+<a class="reference internal image-reference" href="_images/overview_user_infos.png"><img alt="Alternative text" src="_images/overview_user_infos.png" style="width: 300px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Clic on your profil picture to modify it.</p>
+</div>
 </div>
 <div class="section" id="quotes-jokes">
 <h2>Quotes &amp; Jokes<a class="headerlink" href="#quotes-jokes" title="Permalink to this headline">¶</a></h2>
 <p>This part of the Wizard UI allows users to add text that will be displayed randomly. Click the “+” button and add your message. You can also rate from 1 to 5 stars all messages except yours .</p>
-<p>–image– (Jokes)</p>
+<a class="reference internal image-reference" href="_images/overview_jokes.png"><img alt="Alternative text" src="_images/overview_jokes.png" style="width: 300px;" /></a>
 </div>
 <div class="section" id="project-machine-infos">
 <h2>Project &amp; Machine infos<a class="headerlink" href="#project-machine-infos" title="Permalink to this headline">¶</a></h2>
@@ -380,32 +402,53 @@ It also shows the performance of your machine in real time.</p>
 </div>
 <div class="section" id="extras">
 <h2>Extras<a class="headerlink" href="#extras" title="Permalink to this headline">¶</a></h2>
-<p>Extras tools are represented by icons at the bottom right of the Wizard interface.</p>
-<p>–image– ( all icones extras )</p>
+<p>More tools are available from the icons at the bottom right of the Wizard interface.</p>
+<a class="reference internal image-reference" href="_images/overview_extras_1.png"><img alt="Alternative text" src="_images/overview_extras_1.png" style="width: 800px;" /></a>
 <div class="section" id="notification-wall">
 <h3>Notification Wall<a class="headerlink" href="#notification-wall" title="Permalink to this headline">¶</a></h3>
 <p>The Notifications Wall allows you to have an overview of your project history through notifications. You can filter and display only “Create”, “Publish” and “Remove” notifications.</p>
-<p>– image– (Notification Wall + icône en bas à droite)</p>
+<a class="reference internal image-reference" href="_images/overview_extras_2.png"><img alt="Alternative text" src="_images/overview_extras_2.png" style="width: 800px;" /></a>
 </div>
 <div class="section" id="chat">
 <h3>Chat<a class="headerlink" href="#chat" title="Permalink to this headline">¶</a></h3>
 <p>The chat is an internal communication system hosted on the Wizard server. It allows to communicate in real time with users connected to the project. You can also use it to send images to your team.</p>
-<p>– image– (Chat + icône en bas à droite)</p>
+<a class="reference internal image-reference" href="_images/overview_extras_3.png"><img alt="Alternative text" src="_images/overview_extras_3.png" style="width: 800px;" /></a>
 </div>
-<div class="section" id="python-console-log">
-<h3>Python Console &amp; Log<a class="headerlink" href="#python-console-log" title="Permalink to this headline">¶</a></h3>
-<p>The wizard python console allows you to execute python commands. This is where the wizard log is located. If any error occurs while using Wizard, click the mail icon on the console to send the Error Log to the Wizard support team.</p>
-<p>– image– (Console et mail icon + icône en bas à droite)</p>
+<div class="section" id="log-python-console">
+<h3>Log &amp; Python Console<a class="headerlink" href="#log-python-console" title="Permalink to this headline">¶</a></h3>
+<p>The Wizard log print every command processing by Wizard. You can find it at the bottom left corner of the UI.</p>
+<a class="reference internal image-reference" href="_images/overview_extras_8.png"><img alt="Alternative text" src="_images/overview_extras_8.png" style="width: 800px;" /></a>
+<p>The Wizard python console allows you to execute python commands. You can also have a look of the log here.</p>
+<a class="reference internal image-reference" href="_images/overview_extras_6.png"><img alt="Alternative text" src="_images/overview_extras_6.png" style="width: 800px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If any error occurs while using Wizard, click the mail icon on the console to send the Error Log to the Wizard support team.</p>
+</div>
+<a class="reference internal image-reference" href="_images/overview_extras_7.png"><img alt="Alternative text" src="_images/overview_extras_7.png" style="width: 800px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>While emailing the Wizard support you will received an automatic mail back. It mentioned that your message was successfully delivered and that the technical team is dealing with the problem.</p>
+</div>
+</div>
+<div class="section" id="id2">
+<h3>Settings<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>This icon open the Wizard UI setting that allows you to customize it. Turn off and change the notification sound, change the theme of the UI and many more.</p>
+<a class="reference internal image-reference" href="_images/overview_extras_9.png"><img alt="Alternative text" src="_images/overview_extras_9.png" style="width: 800px;" /></a>
 </div>
 <div class="section" id="locked-asset">
 <h3>Locked Asset<a class="headerlink" href="#locked-asset" title="Permalink to this headline">¶</a></h3>
 <p>This button allows you to see the number of assets locked by your user and unlock them directly with one click. To allow other users to open any work scene of the project in your absence, it’s strongly recommended to unlock your assets through this button, before quitting your Wizard session.</p>
-<p>– image– (UI Locked Asset + icône en bas à droite)</p>
+<a class="reference internal image-reference" href="_images/overview_extras_4.png"><img alt="Alternative text" src="_images/overview_extras_4.png" style="width: 800px;" /></a>
 </div>
 <div class="section" id="running-asset">
 <h3>Running Asset<a class="headerlink" href="#running-asset" title="Permalink to this headline">¶</a></h3>
 <p>This button allows you to see the number of assets in work if you have multiples opened scenes.</p>
-<p>– image– (UI Running Asset + icône en bas à droite)</p>
+<a class="reference internal image-reference" href="_images/overview_extras_5.png"><img alt="Alternative text" src="_images/overview_extras_5.png" style="width: 800px;" /></a>
+</div>
+<div class="section" id="server">
+<h3>Server<a class="headerlink" href="#server" title="Permalink to this headline">¶</a></h3>
+<p>Wizard is automaticaly running a server when you launch it. This icon is blue while Wizard is connected to the server. The server allows to connect multiple user to a project, access to their working files and communicate with them.</p>
+<a class="reference internal image-reference" href="_images/overview_extras_10.png"><img alt="Alternative text" src="_images/overview_extras_10.png" style="width: 800px;" /></a>
 </div>
 </div>
 </div>
