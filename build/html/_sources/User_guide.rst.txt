@@ -118,28 +118,195 @@ Softwares Settings
 
 After creating your user and a project, you are ready to start using **Wizard**.
 
-Before creating an asset, you must fill in the software paths in the software settings. The location of each software depends on the installation you have done.
+Before creating an asset, you must fill in the software paths in the *software settings*. The location of each software depends on the installation you have done.
 
-In this example, the maya softwares settings are set.
+In this example, we are setting Autodesk Maya 2020.
 
-You can also add environnment variables and custom scripts paths. They will be loaded when you launch the software from the **Wizard Launcher**.
+You can also add *environnment variables* and *custom scripts* paths. They will be loaded when you launch the software from the **Wizard Launcher**.
 
 .. image:: _images/user_guide_softwares_setting_editing_path_01.png
   :width: 400
   :alt: Alternative text
 
 .. note::
-  The software settings are written in the project settings. Each user connected to your project must have the same software installation. This ensure the Launcher to work. It is recommended to do a default installation of your software in order to guarantee the same software location between each user. Make sure each user have an access to the custom scripts and have the same environment variables set in this windows otherwise they won't be loaded.  
+  The *software settings* are written in the *project settings*. Each user connected to your project must have the **same software installation**. This ensure the *Launcher* to work. It is recommended to do a default installation of your software in order to guarantee the same software location between each user. *Make sure each user have an access to the custom scripts and have the same environment variables set in this windows otherwise they won't be loaded*.  
 
 Working with Assets
 ^^^^^^^^^^^^^^^^^^^
 
-Once Wizard is configured you're ready to work on your asset.
+Once **Wizard** is configured you're ready to work on your asset.
 
-As shown in the outliner, within your Wizard project dissociates several parts of your production. The Asset part of the Outliner is one of the fourth major production part. It contains all the production stages from the design to the look development, trough design, modeling, texturing, grooming, and rig.
+As shown in the outliner, Wizard dissociates several parts of your production. The *Asset* part of the *Outliner* is one of the fourth major production part. It contains all the production stages from the *design* to the *look development*, trough *design*, *modeling*, *texturing*, *grooming*, and *rig*.
 
 Create an Asset
 ===============
+
+Let's create your first *character*. 
+
+To do this, deploy the *asset* tab of the outliner, then the*character* tab. 
+
+To add a character asset to your project click *new*.
+
+.. image:: _images/user_guide_create_asset_character_01.png
+  :width: 800
+  :alt: Alternative text
+
+The asset creation window will open next to the character list.
+
+.. image:: _images/user_guide_create_asset_character_02.png
+  :width: 300
+  :alt: Alternative text
+
+Write down the name of your character and click *create*.
+
+.. image:: _images/user_guide_create_asset_character_03.png
+  :width: 300
+  :alt: Alternative text
+
+**Wizard** has created your character, meaning, now it knows that this asset exist. As you can see, all the production stages (from the design to the shading) are now ready to be created. It also send a pop-up message, regarding the creation, to all users connected on the project.
+
+.. image:: _images/user_guide_create_asset_character_04.png
+  :width: 300
+  :alt: Alternative text
+
+
+Each *creation*, *archive* and *publish* action are listed in the *notification wall*. To view the notification wall click on the *bell* icon at the bottom right of the wizard interface, and access to the summary of *creation*, *archiving* and *publishing* of your production in reverse chronological order.
+
+.. image:: _images/user_guide_create_asset_character_modeling_11.png
+  :width: 300
+  :alt: Alternative text
+
+Archiving an Asset
+------------------
+
+If you want to delete an asset from the outliner, right click on it's name, and click *archive*.
+
+.. image:: _images/user_guide_create_asset_character_modeling_08.png
+  :width: 800
+  :alt: Alternative text
+
+A confirmation window will open, click on *archive*.
+
+.. image:: _images/user_guide_create_asset_character_modeling_09.png
+  :width: 300
+  :alt: Alternative text
+
+You will then send a pop-up message, regarding the archive, to all users connected on the project.
+
+
+.. image:: _images/user_guide_create_asset_character_modeling_10.png
+  :width: 300
+  :alt: Alternative text
+
+.. warning::
+  Archiving remove your asset from the pipeline, however you still have an access to the archive of your production. They are located as follow : yourprojectpath/archives
+
+  You can't bring your asset back to the pipeline automatically unless you do it by hand.
+
+Create the Modeling Stage (Autodesk Maya 2020)
+----------------------------------------------
+
+To create the *modeling stage* of your *character*, click on the *modeling* stage of your *character*.
+
+.. image:: _images/user_guide_create_asset_character_modeling_01.png
+  :width: 800
+  :alt: Alternative text
+
+**Wizard** has created your asset in the variant *Main*, *version 0000*. It will be confirm by a pop-up message to all users connected to the project and a notification in the notification wall.
+
+.. image:: _images/user_guide_create_asset_character_modeling_02.png
+  :width: 300
+  :alt: Alternative text
+
+.. image:: _images/user_guide_create_asset_character_modeling_03.png
+  :width: 800
+  :alt: Alternative text
+
+
+Select the software you want to use to work on your asset. For the modeling, as example, we are using Autodesk Maya 2020. To select the software you want to use, click it in the list of the *Launcher*, and click on the software icon to launch it. Make sure your *Wizard Software Settings* are up to date to be able to launch any software. 
+
+.. image:: _images/user_guide_create_asset_character_modeling_03.1.png
+  :width: 800
+  :alt: Alternative text
+
+.. image:: _images/user_guide_create_asset_character_modeling_04.png
+  :width: 300
+  :alt: Alternative text
+
+Maya open with a *Wizard Shelve*. 
+
+.. image:: _images/user_guide_create_asset_character_modeling_14.png
+  :width: 800
+  :alt: Alternative text
+
+.. image:: _images/user_guide_wizard_maya_shelve_01.png
+  :width: 800
+  :alt: Alternative text
+
+Start creating your asset, *under a group* named as followed in your Maya Outliner: *geo_GRP*. This is important for the next step.
+
+.. image:: _images/user_guide_create_asset_character_modeling_05.png
+  :width: 800
+  :alt: Alternative text
+
+To save your asset when your done, use the *Wizard Shelve* of Maya and click the *Save* icon (first icon of the *Wizard Shelve*). A *check* message will pop-up and it will create a notification.
+
+.. image:: _images/user_guide_wizard_maya_shelve_01.2.png
+  :width: 600
+  :alt: Alternative text
+
+
+.. image:: _images/user_guide_save_pop_up_01.png
+  :width: 150
+  :alt: Alternative text
+
+When saving, **Wizard** will *increment* the working version of your asset from *xxxx* to *xxx+1*. For example if your saving your *0003* version, **Wizard** will turn it *0004*. You will also get a *screenshot* of your scene displayed in the *Wizard Launcher*.
+
+You can have an overview of any work version from the *Wizard Launcher* in the version List and from the *Version Manager*.
+
+.. image:: _images/user_guide_create_asset_character_modeling_07.png
+  :width: 400
+  :alt: Alternative text
+
+From the *Version Manager* you can *Delete*, *Comment* or *Launch* any version using the icons next to each work version.
+
+.. image:: _images/user_guide_create_asset_character_modeling_12.png
+  :width: 800
+  :alt: Alternative text
+
+When your done working on your asset, it's time to *publish* it and make it available for the next stage and other users.
+
+To *publish* your asset, use the *green arrow* icon in the *Wizard Shelve* of maya (Second icon of the *Wizard Shelve*).
+
+.. image:: _images/user_guide_wizard_maya_shelve_01.1.png
+  :width: 600
+  :alt: Alternative text
+
+It will send a pop-up message to the team and create a notification. 
+
+.. image:: _images/user_guide_create_asset_character_modeling_06.png
+  :width: 400
+  :alt: Alternative text
+
+You can have an overview of any *published version* from the *Exports* tab of the *Scene Manager*.
+You can comment and open the location of those published files by clicking the icon next to each exported versions.
+
+.. image:: _images/user_guide_create_asset_character_modeling_13.png
+  :width: 800
+  :alt: Alternative text
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
