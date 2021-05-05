@@ -22,7 +22,7 @@ copyright = '2020, Alexandre Manzanares, Léo Brunel'
 author = 'Alexandre Manzanares, Léo Brunel'
 
 # The full version, including alpha/beta/rc tags
-release = '0.9.7.5-b'
+release = '0.9.9.20-b'
 
 
 # -- General configuration ---------------------------------------------------
